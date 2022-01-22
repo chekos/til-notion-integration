@@ -5,5 +5,5 @@ curl --request POST \
      --header 'Accept: application/json' \
      --header 'Authorization: Bearer '"$NOTION_TOKEN"'' \
      --header 'Content-Type: application/json' \
-     --header 'Notion-Version: 2022-01-20' \
+     --header 'Notion-Version: 2021-08-16' \
      --data '{"page_size":100}'
