@@ -16,3 +16,5 @@ jobs:
     - name: Search shared pages
       run: |-
         sh ./scripts/query_pages.sh
+      env:
+        NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
