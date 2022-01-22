@@ -4,7 +4,6 @@ curl -X POST 'https://api.notion.com/v1/search' \
   -H 'Content-Type: application/json' \
   -H "Notion-Version: 2022-01-20" \
   --data '{
-    "query":"External tasks",
     "sort":{
       "direction":"ascending",
       "timestamp":"last_edited_time"
