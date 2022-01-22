@@ -1,0 +1,17 @@
+name: Scrape latest data
+
+on:
+  push: [main]
+  workflow_dispatch:
+  schedule:
+    - cron:  '*/60 * * * *'
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out this repo
+      uses: actions/checkout@v2
+    - name: Search shared pages
+      run: |-
+        sh ./scripts/query_pages.sh
