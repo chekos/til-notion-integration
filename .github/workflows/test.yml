@@ -20,7 +20,7 @@ jobs:
         NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
     - name: Query til db
       run: |-
-        sh ./scripts/query_til_db.sh
+        sh ./scripts/query_til_db.sh | jq '.'
       env:
         NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         TIL_DATABASE_ID: ${{ secrets.TIL_DATABASE_ID }}
