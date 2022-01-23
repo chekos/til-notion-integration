@@ -2,10 +2,9 @@ name: Scrape latest data
 
 on:
   push: 
-    branches: [main]
-  workflow_dispatch:
+  repository_dispatch:
   schedule:
-    - cron:  '39 20 * * 1-5'
+    - cron:  '25,55 6,20 * * 1-5'
 
 jobs:
   scrape:
@@ -13,14 +12,17 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v2
-    - name: Search shared pages
-      run: |-
-        sh ./scripts/query_pages.sh
-      env:
-        NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
     - name: Query til db
       run: |-
         sh ./scripts/query_til_db.sh | jq '.results[] | {id: .id, title: .properties.Name.title[0].text.content, tags: [.properties.Tags.multi_select[].name], created: .properties.Created.created_time }'
       env:
         NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         TIL_DATABASE_ID: ${{ secrets.TIL_DATABASE_ID }}
+    - name: Commit and push if it changed
+      run: |-
+        git config user.name "Automated"
+        git config user.email "actions@users.noreply.github.com"
+        git add -A
+        timestamp=$(date -u)
+        git commit -m "Latest data: ${timestamp}" || exit 0
+        git push
