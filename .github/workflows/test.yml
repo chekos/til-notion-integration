@@ -18,3 +18,9 @@ jobs:
         sh ./scripts/query_pages.sh
       env:
         NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+    - name: Query til db
+      run: |-
+        sh ./scripts/query_til_db.sh
+      env:
+        NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        TIL_DATABASE_ID: ${{ secrets.TIL_DATABASE_ID }}
