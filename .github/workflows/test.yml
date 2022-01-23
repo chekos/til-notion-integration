@@ -20,7 +20,7 @@ jobs:
         NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
     - name: Query til db
       run: |-
-        sh ./scripts/query_til_db.sh | jq '.results[] | {id: .id, title: .properties.Name.title[0].text.content, tags: [.properties.Tags.multi_select[].name] }'
+        sh ./scripts/query_til_db.sh | jq '.results[] | {id: .id, title: .properties.Name.title[0].text.content, tags: [.properties.Tags.multi_select[].name], created: .properties.Created.created_time }'
       env:
         NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         TIL_DATABASE_ID: ${{ secrets.TIL_DATABASE_ID }}
