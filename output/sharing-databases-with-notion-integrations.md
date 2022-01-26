@@ -11,6 +11,6 @@ I wonder if the _markdown_ works - or **how** it looks like in the json returned
 
 ## reference
 Let’s see this bookmark
-[Alt text](https://GitHub.com/chekos/til-notion-integration)
+[GitHub.com/chekos/til-notion-integration](https://GitHub.com/chekos/til-notion-integration)
 
-[Alt text](https://developers.notion.com/reference/post-database-query)
+[developers.notion.com/reference/post-database-query](https://developers.notion.com/reference/post-database-query)
