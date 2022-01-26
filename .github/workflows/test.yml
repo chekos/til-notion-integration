@@ -12,14 +12,24 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+        cache: 'pip'
     - name: Query til db
       run: |-
         sh ./scripts/query_til_db.sh 
+      env:
+        NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        TIL_DATABASE_ID: ${{ secrets.TIL_DATABASE_ID }}
+    - name: Markdownify pages
+      run: |-
         python -m pip install -r requirements.txt
         python ./scripts/page_to_md.py
       env:
         NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-        TIL_DATABASE_ID: ${{ secrets.TIL_DATABASE_ID }}
+    - name: Configure 
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
