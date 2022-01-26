@@ -1,20 +1,34 @@
-{
-  "id": "0269c4d3-1424-4eaa-b865-31ed74180340",
-  "title": "sharing databases with notion integrations",
-  "tags": [
-    "notion"
-  ],
-  "created": "2022-01-23T20:22:00.000Z"
-}
-{
-  "id": "3f5c0ab5-ed19-405a-ad94-b48ba5279dc7",
-  "title": "Page 3",
-  "tags": [],
-  "created": "2022-01-23T20:21:00.000Z"
-}
-{
-  "id": "86d6cfd9-a9f3-4c51-8a91-40772f060346",
-  "title": "Page 2",
-  "tags": [],
-  "created": "2022-01-23T20:21:00.000Z"
-}
+[
+  {
+    "id": "6a01783a-5b8e-4f40-b745-86d9f73d87ae",
+    "title": "jq [] syntax",
+    "tags": [
+      "jq",
+      "shell"
+    ],
+    "created": "2022-01-25T23:15:00.000Z"
+  },
+  {
+    "id": "0269c4d3-1424-4eaa-b865-31ed74180340",
+    "title": "sharing databases with notion integrations",
+    "tags": [
+      "notion"
+    ],
+    "created": "2022-01-23T20:22:00.000Z"
+  },
+  {
+    "id": "3f5c0ab5-ed19-405a-ad94-b48ba5279dc7",
+    "title": "Page 3",
+    "tags": [],
+    "created": "2022-01-23T20:21:00.000Z"
+  },
+  {
+    "id": "86d6cfd9-a9f3-4c51-8a91-40772f060346",
+    "title": "updated tils",
+    "tags": [
+      "jq",
+      "bash"
+    ],
+    "created": "2022-01-23T20:21:00.000Z"
+  }
+]
