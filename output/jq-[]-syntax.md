@@ -13,9 +13,8 @@ This file is not valid JSON. However, if you wrap your entire expression in squa
 
 returns →
 
-
 ## how i learned
-Testing the `til-notion-integration` and `markdownify-notion` I tried reading a list of tils I had saved in a JSON file. However, each object was separated by a new line - not a comma.
+Testing the `til-notion-integration` and `markdownify-notion` I tried reading a list of TILs I had saved in a JSON file. However, each object was separated by a new line - not a comma.
 ## reference
-The solution (after many failed google searches) was found here →
+The solution (after many failed google searches) was found on a GitHub issue answered by the creator of `jq` →
 [Alt text](https://github.com/stedolan/jq/issues/124#issuecomment-17875972)
