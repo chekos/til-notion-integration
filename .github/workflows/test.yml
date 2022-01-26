@@ -15,7 +15,7 @@ jobs:
     - name: Query til db
       run: |-
         sh ./scripts/query_til_db.sh 
-        python pip install -r requirements.txt
+        python -m pip install -r requirements.txt
         python ./scripts/page_to_md.py
       env:
         NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
