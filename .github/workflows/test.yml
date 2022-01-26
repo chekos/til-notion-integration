@@ -29,7 +29,6 @@ jobs:
         python ./scripts/page_to_md.py
       env:
         NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-    - name: Configure 
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
