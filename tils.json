@@ -1,5 +1,15 @@
 [
   {
+    "id": "50f5533f-301e-4739-8354-9d1fc982b5bd",
+    "title": "how to solve permission error from airflow official docker image",
+    "tags": [
+      "docker",
+      "airflow",
+      "python"
+    ],
+    "created": "2022-01-27T20:00:00.000Z"
+  },
+  {
     "id": "6a01783a-5b8e-4f40-b745-86d9f73d87ae",
     "title": "jq [] syntax",
     "tags": [
