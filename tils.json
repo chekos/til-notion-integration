@@ -25,20 +25,5 @@
       "notion"
     ],
     "created": "2022-01-23T20:22:00.000Z"
-  },
-  {
-    "id": "3f5c0ab5-ed19-405a-ad94-b48ba5279dc7",
-    "title": "Page 3",
-    "tags": [],
-    "created": "2022-01-23T20:21:00.000Z"
-  },
-  {
-    "id": "86d6cfd9-a9f3-4c51-8a91-40772f060346",
-    "title": "updated tils",
-    "tags": [
-      "jq",
-      "bash"
-    ],
-    "created": "2022-01-23T20:21:00.000Z"
   }
 ]
