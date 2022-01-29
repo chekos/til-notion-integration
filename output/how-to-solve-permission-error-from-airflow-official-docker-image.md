@@ -14,7 +14,10 @@ From there all i had to do was run `id -u` to find the correct user id (the id o
 ## reference
 the airflow documentation →
 [airflow.apache.org/docs/apache-airflow/stable/start/docker.html](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html#setting-the-right-airflow-user)
+
 this stackoverflow answer →
 [stackoverflow.com/questions/67698656/cant-init-db-for-airflow-docker-compose-permission-denied/67704988](https://stackoverflow.com/questions/67698656/cant-init-db-for-airflow-docker-compose-permission-denied/67704988#67704988)
+
 this **fantastic** explanation of user and groups permissions →
 [unix.stackexchange.com/questions/116070/granting-write-permissions-to-a-group-to-a-folder](https://unix.stackexchange.com/questions/116070/granting-write-permissions-to-a-group-to-a-folder)
+
