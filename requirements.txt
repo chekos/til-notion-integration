@@ -1,2 +1,2 @@
-markdownify-notion==0.2.1
+markdownify-notion==0.3
 requests==2.27
